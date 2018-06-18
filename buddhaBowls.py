@@ -79,29 +79,76 @@ def koreanBBQBowl():
     cabbagePackages = CABBAGE_PER_BOWL * numBowls
 
     print("You will need: ")
-    print("--> ", ketchupCups, " cups of ketchup")
-    print("--> ", vinegarCups, " cups of rice vinegar")
-    print("--> ", soySauceCups, " cups of soy sauce")
-    print("--> ", sugarTablespoons, " tablespoons of sugar")
-    print("--> ", sesameSeedsTablespoons, " tablespoons of sesame seeds")
-    print("--> ", misoTeaspoons, " teaspoons of yellow miso")
-    print("--> ", sirachaTeaspoons, " teaspoons of siracha")
-    print("--> ", pepperTeaspoons, " teaspoons of black pepper")
-    print("--> ", numOnions, " green onions (thinly sliced)")
-    print("--> ", numGarlics, " cloves of garlic (minced)")
-    print("--> ", numGingers, " pieces of ginger (grated)")
-    print("--> ", sesameOilTablespoons, " tablespoons of sesame oil")
-    print("--> ", numBroccolis, " crowns of broccoli")
-    print("--> ", numZucchinis, " zucchinis (sliced)")
-    print("--> ", waterTablespoons, " tablespoons of water")
-    print("--> ", pineappleCups, " cups of pineapple chunks")
-    print("--> ", numPeppers, " red peppers (cored & sliced)")
-    print("--> ", tofuPackages, " packages of tofu")
-    print("--> ", quinoaPackages, " packages of quinoa")
-    print("--> ", cabbagePackages, " packages of red cabbage")
+    print("--> ", ketchupCups, pluralize("cup", "cups", ketchupCups),
+          "of ketchup")
+    print("--> ", vinegarCups, pluralize("cup", "cups", vinegarCups),
+          "of rice vinegar")
+    print("--> ", soySauceCups, pluralize("cup", "cups", soySauceCups),
+          "of soy sauce")
+    print("--> ", sugarTablespoons,
+          pluralize("tablespoon", "tablespoons", sugarTablespoons), "of sugar")
+    print("--> ", sesameSeedsTablespoons,
+          pluralize("tablespoon", "tablespoons", sesameSeedsTablespoons),
+          "of sesame seeds")
+    print("--> ", misoTeaspoons,
+          pluralize("teaspoon", "teaspoons", misoTeaspoons), "of yellow miso")
+    print("--> ", sirachaTeaspoons,
+          pluralize("teaspoon", "teaspoons", sirachaTeaspoons), "of siracha")
+    print("--> ", pepperTeaspoons,
+          pluralize("teaspoon", "teaspoons", pepperTeaspoons), "of black pepper")
+    print("--> ", numOnions, " green ", pluralize("onion", "onions", numOnions),
+          "(thinly sliced)")
+    print("--> ", numGarlics, pluralize("clove", "cloves", numGarlics),
+          "of garlic (minced)")
+    print("--> ", numGingers, pluralize("piece", "pieces", numGingers),
+          "of ginger (grated)")
+    print("--> ", sesameOilTablespoons,
+          pluralize("tablespoon", "tablespoons", sesameOilTablespoons),
+          "of sesame oil")
+    print("--> ", numBroccolis, pluralize("crown", "crowns", numBroccolis),
+          "of broccoli")
+    print("--> ", numZucchinis, pluralize("zucchini", "zuchinis", numZucchinis),
+          "(sliced)")
+    print("--> ", waterTablespoons,
+          pluralize("tablespoon", "tablespoons", waterTablespoons), "of water")
+    print("--> ", pineappleCups, pluralize("cup", "cups", pineappleCups),
+          "of pineapple chunks")
+    print("--> ", numPeppers, " red ",
+          pluralize("pepper", "peppers", numPeppers), "(cored & sliced)")
+    print("--> ", tofuPackages, pluralize("package", "packages", tofuPackages),
+          " packages of tofu")
+    print("--> ", quinoaPackages,
+          pluralize("package", "packages", quinoaPackages), "of quinoa")
+    print("--> ", cabbagePackages,
+          pluralize("package", "packages", cabbagePackages),
+          "of red cabbage")
 
 def thaiBowlPeanutSauce():
-    pass
+    """Outputs ingredients and directions for Thai Bowl with Peanut Sauce recipe."""
+    numBowls = int(input("How many bowls do you want to make?"))
+
+    # cups of red rice
+
+    # cups of bean sprouts
+
+    # cups of shredded carrots
+
+    # cups of purple cabbagePackages
+
+    # ounces of coconut milk
+
+    # cups of natural unsweetened peanut butter
+
+    # cups of coconut sugar
+
+    # cups of water
+
+    # tablespoons of apple cider vinegar
+
+    # teaspoons of red curry paste
+
+    # tablespoons of soy sauce
+
 
 def eggVeggieBrkfstBowl():
     """Outputs ingredients and directions for Egg and Veggie Breakfast
@@ -150,6 +197,8 @@ def eggVeggieBrkfstBowl():
     print("--> ", harissaTablespoons,
           pluralize("tablespoon", "tabelspoons", harissaTablespoons),
           "of harissa")
+    print("--> ", ricePackages, pluralize("package", "packages", ricePackages),
+          "of rice")
 
 def cubanQuinoaBowl():
     pass
